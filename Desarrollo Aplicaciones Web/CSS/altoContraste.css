@@ -1,0 +1,17 @@
+body {
+    font-family: verdana, helvetica;
+    color: #000000;
+    /* texto blanco */
+    background-color: #ffffff;
+    /* fondo negro */
+}
+
+header,
+body>footer,
+body>nav>ul {
+    background-color: var(--main-color-contraste);
+}
+
+img {
+    filter: contrast(150%);
+}

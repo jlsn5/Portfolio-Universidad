@@ -1,0 +1,12 @@
+@import url("../CSS/estilo.css");
+.img-container {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.solicitar {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}

@@ -1,0 +1,113 @@
+/* DARK MODE */
+
+
+/* @import url("../CSS/estilo.css"); */
+
+html {
+    transition: color 300ms, background-color 300ms;
+    background: var(--dark-background);
+    color: var(--color-claro);
+}
+
+#login {
+    background-color: #303030;
+}
+
+.enviar {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    color: #000;
+    background-color: #fff;
+}
+
+header {
+    background-color: var(--main-color-oscuro);
+    text-align: center;
+    color: white;
+}
+
+body>nav>ul {
+    background-color: var(--main-color-oscuro);
+}
+
+body>footer {
+    padding: 1em;
+    background-color: var(--main-color-oscuro);
+    color: white;
+}
+
+body>section>div>form,
+#divForm {
+    background-color: #303030;
+}
+
+
+/* TABLA */
+
+
+/* Bordes */
+
+table,
+tr,
+th,
+td {
+    border-collapse: collapse;
+    border: 3px solid #012b63;
+}
+
+
+/* Tipografía */
+
+th {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+caption {
+    font-variant: small-caps;
+}
+
+
+/* Fondo*/
+
+table {
+    background-color: #166b7c;
+}
+
+thead,
+tfoot {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+thead th,
+tfoot th,
+tfoot td {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+}
+
+
+/* Estilo cebra */
+
+tbody tr:nth-child(odd) {
+    background-color: #21616d;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #2490a3;
+}

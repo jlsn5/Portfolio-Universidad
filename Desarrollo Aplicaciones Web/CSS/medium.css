@@ -1,0 +1,17 @@
+@import url("../CSS/estilo.css");
+.img-container {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.col-25,
+.col-75,
+input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+}
+
+.row:after {
+    margin-bottom: 1.5em;
+}

@@ -1,0 +1,44 @@
+p,
+ul,
+li,
+label {
+    font-family: sans-serif;
+    /* margin: 0 0 1.5em 0; */
+    font-size: 12pt;
+}
+
+img {
+    filter: grayscale(100%);
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: blue;
+    text-decoration: underline red;
+    font-size: 16pt;
+}
+
+nav,
+aside,
+form {
+    display: none;
+}
+
+#logintext {
+    display: none;
+}
+
+a[href^=http]:after {
+    content: " <" attr(href) ">";
+}
+
+ul,
+img,
+table {
+    page-break-inside: avoid;
+}
+
+@page {
+    margin: 2cm;
+}

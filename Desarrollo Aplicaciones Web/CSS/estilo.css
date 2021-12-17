@@ -1,0 +1,321 @@
+/* Comienzo del css base */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* VARIABLES */
+
+:root {
+    --main-color: #0077b6;
+    --main-color-oscuro: #012b63;
+    --main-color-contraste: rgb(7, 7, 124);
+    --background-color: rgb(255, 255, 255);
+    --dark-background: #030303;
+    --color-claro: rgb(204, 202, 202);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Para hacer responsive el textarea de crearAlbum */
+
+.comment {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Quitar los puntos de las listas no ordenadas */
+
+ul {
+    list-style: none;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+
+/* Tipo de fuetne global */
+
+p,
+ul,
+li,
+label {
+    font-family: Helvetica, Arial, sans-serif;
+    /* margin: 0 0 1.5em 0; */
+}
+
+
+/* Cabecera y menus */
+
+header {
+    background-color: var(--main-color);
+    text-align: center;
+    color: white;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+
+/* MENUS NAVEGACION */
+
+body>nav>ul>li>a {
+    color: white;
+}
+
+body>nav>ul>li>form>label {
+    color: white;
+}
+
+body>nav>ul {
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 0;
+    font-weight: bold;
+    background-color: var(--main-color);
+    position: relative;
+    left: -110%;
+    transition: left .5s;
+}
+
+body>nav>ul>li {
+    padding: 5px 10px;
+    border: 1px solid rgb(255, 255, 255);
+    /* background-color: rgb(115, 191, 241); */
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 0.5em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0.75em;
+}
+
+
+/* Footer */
+
+body>footer {
+    padding: 1em;
+    background-color: var(--main-color);
+    color: white;
+}
+
+body>footer>p {
+    padding: .5em;
+    margin: 0vmin;
+    text-align: center;
+}
+
+body>footer>p>a {
+    color: white;
+}
+
+
+/* Tablas */
+
+
+/* Espaciado y distribución */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    /* Con el siguiente margen las tablas se pegan demasiado a la derecha, es como que ha ese lado no se respeta del margen nose porque */
+    margin: 10px;
+}
+
+thead th:nth-child(1) {
+    width: 40%;
+}
+
+thead th:nth-child(2) {
+    width: 40%;
+}
+
+thead th:nth-child(3) {
+    width: 20%;
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+
+/* Bordes */
+
+table,
+tr,
+th,
+td {
+    border-collapse: collapse;
+    border: 3px solid #023e8a;
+}
+
+
+/* Tipografía */
+
+th {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+caption {
+    font-variant: small-caps;
+}
+
+
+/* Fondo*/
+
+table {
+    background-color: #00B4D8;
+}
+
+thead,
+tfoot {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+thead th,
+tfoot th,
+tfoot td {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+}
+
+
+/* Estilo cebra */
+
+tbody tr:nth-child(odd) {
+    background-color: #90E0EF;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #CAF0F8;
+}
+
+
+/* LOGIN */
+
+#login {
+    width: 300px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #ccc;
+}
+
+
+/* FORMULARIOS GENERALES */
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="number"],
+form input[type="password"] {
+    width: 180px;
+    padding: 3px 10px;
+    border: 1px solid #dad5d5;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+select {
+    padding: 5px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+
+/* FIN FORMULARIOS GENERALES */
+
+.enviar {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+}
+
+
+/* FORMULARIO REGISTRO */
+
+.formuresponsive>form>div>div>input[type=text],
+.formuresponsive>form>div>div>input[type=password],
+.formuresponsive>form>div>div>input[type=email],
+.formuresponsive>form>div>div>input[type=date] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.formuresponsive>form>div>div>select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.formuresponsive>form>div>div>label {
+    padding: 14px 0 0 0;
+    display: inline-block;
+}
+
+.formuresponsive {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

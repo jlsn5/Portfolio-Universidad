@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+#menuimagen {
+    width: 4%;
+    height: auto;
+}
+
+body>nav>label {
+    cursor: pointer;
+}
+
+#chkMenu {
+    display: none;
+}
+
+#chkMenu:checked+ul {
+    left: 0;
+}
+
+
+/* body>section>nav>ul>li>a {
+    display: block;
+    padding: .2em .5em;
+    font-weight: bold;
+    text-decoration: none;
+} */
+
+
+/*COMO PONER DOS ARTICULOS SI LA PAGINA SE AGRANDA*/
+
+@media all and (min-width:650px) {
+    body>nav>ul {
+        left: 0;
+        display: flex;
+    }
+    body>nav>label {
+        display: none;
+    }
+}
